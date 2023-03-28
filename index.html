@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2fd738494f.js" crossorigin="anonymous"></script>
+       
+</head>
+<body>
+
+<div id="Header">
+
+    <div class="container">
+
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#Header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="(openmenu())"></i>
+
+        </nav>
+        <div class="header-text">
+            <p><h5>Front end Developer</h5></p>
+            <h1>Hi, it's me <span> Nelson</span><br> Nice to meet you!</h1>
+
+        </div>
+    </div>
+
+</div>
+<!------------ About section ---------------->
+<div id="About">
+    <div class="container">
+        <div class = "Row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Former customer service representative with a passion for technology seeking to
+                    transition into the IT industry. I possess excellent communication, problem-solving, and
+                    time-management skills. I am highly motivated to learn and grow in the IT industry and
+                    have taken steps to develop my technical knowledge, such as completing online courses
+                    and obtaining certifications. Overall, I am a dedicated, hardworking individual who is
+                    committed to making a positive contribution to any organization.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML and CSS</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>C# ASP.Net</span></li>
+                            <li><span>Knowledgeable in Microsoft Office</span></li>
+                            <li><span>Verbal and written communication skills</span></li>
+                            <li><span>Database Management</span></li>
+                            <li><span>SQL</span></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span id="title">Machine Operator</span1></li>
+                            <li><span id="title">The Ice factory Inc. | April 2022 - Jan. 2023</span></li>
+                            <li><span>Operating and maintaining the ice plant machinery.</span></li>
+                            <li><span>Monitoring the production process.</span></li>
+                            <li><span>Conducting regular checks on the machinery.</span></li>
+                            <li><span>Adjusting the equipment as necessary to ensure optimal performance.</span></li>
+                            <li><span>Inspecting the machine components</span></li>
+                            <li><span>Ensuring that the ice produced meets quality standards.</span></li>
+
+                          <br>
+                            <li><span id="title">Customer Service Representative</span></li>
+                            <li><span id="title">HGS Pasig | November 2019 - January 2022</span></li>
+                            <li><span>Handling customers healthcare insurance</span></li>
+                            <li><span>Provide customers insurance benefits</span></li>
+                            <li><span>Assisting customers on their concerns</span></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span id="title">Tertiary | 2019 </span></li>
+                            <li><span>Bachelor of Science in Information System</span></li>
+                            <li><span>Immaculate Conception-I College of arts and Technology</span></li><br>                         
+                            <li><span id="title">Secondary | 2015</span></li>
+                            <li><span>Eladio T. Balite Memorial School of Fisheries</span></li><br>
+                            <li><span id="title">Primary | 2011</span></li>
+                            <li><span>Bobon Central Elementary School</span></li>
+                            
+                        </ul>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!--------Services-------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Offering custom website design services that are visually appealing, user-friendly,
+                    and optimized for search engines. </p>
+                <a href="#">Learn more</a>
+
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>UI/UX Design</h2>
+                <p>Creating an intuitive and seamless user experience that meets the needs of your target audience. Designing the 
+                visual elements of the website, including typography, color scheme, images, and graphics. </p>
+                <a href="#">Learn more</a>
+                
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>Responsive Design</h2>
+                <p>Ensuring that the website looks great and functions well on all devices, including desktops, laptops, tablets, and smartphones. </p>
+                <a href="#">Learn more</a>
+                
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-----------------Portfolio--------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>      
+        <div class="work-list">
+            <div class="work">
+               
+                <img src="images/work1.jpg">
+                <div class="layer">
+                     <h3>E-commerce website</h3>
+                    <p>Creating a visually appealing layout, optimizing the website for search engines, 
+                        implementing shopping cart functionality, and creating interactive features such as product sliders and hover effects.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+               
+                <img src="images/work2.jpg">
+                <div class="layer">
+                   <h3>Mobile app</h3> 
+                    <p>Creating a responsive design that works well on different devices, implementing a user authentication system, 
+                        creating interactive features such as swipe gestures and push notifications, and optimizing the app for performance.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+               
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Online learning platform</h3>
+                    <p> Creating a user-friendly interface that allows users to easily navigate and access course content, implementing a user authentication system, 
+                        creating interactive features such as quizzes and progress trackers, and optimizing the website for accessibility.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!----------contact------------>
+<div id="contact">
+
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>serbitonelsonbello@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+639488619846</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/nelson.serbito"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/serbitonelsonbello/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nelson-serbito-38970a18a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/NelsonSerbito"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/Nelson Serbito(Resume).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+               
+                
+            </div>
+      
+        </div>
+        <span id="msg"></span>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy;Nelson|2023</p>
+
+    </div>
+</div>
+
+
+
+<script src="index.js"></script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxc8eWxF_YdahmvSlDx-HiWc2BSsSn1A9R_WiOlRMMQIp2Er4OQyScM22nDj6VcGlfR/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+
+</html>
